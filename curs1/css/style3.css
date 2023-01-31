@@ -1,0 +1,16 @@
+div, section{
+    margin:20px;
+    padding: 20px;
+    border: 2px solid red;
+}
+section > p{
+    font-style: italic;
+    color: brown;
+}
+section  p{
+    font-style: italic;
+    color: brown;
+}
+div p{
+    color: blue;
+}

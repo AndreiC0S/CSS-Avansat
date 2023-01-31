@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-style: italic;
+    text-align: center;
+}
+
+div:not(#myDiv2){
+    background-color: antiquewhite;
+}
+
+#myDiv2{
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    background-color: beige;
+}
+
+.mydiv{
+    background-color: aqua;
+    margin: 25px 20px;
+    padding: 15px;
+    color: red;
+}
+
+div{
+    border: 3px red double;
+}
+
+.mydiv3{
+    font-size: 32px;
+    color: blueviolet;
+
+}

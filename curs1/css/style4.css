@@ -1,0 +1,26 @@
+body{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+body > div {
+    margin-top: 50px;
+    
+}
+div {
+    border: 3px brown solid;
+    background-color: purple;
+    padding: 10px;
+    
+}
+
+div > div {
+    background-color: bisque;
+    color: red;
+    height: auto;
+}
+div > div >div{
+    background-color: aqua;
+    color: brown;
+}
+

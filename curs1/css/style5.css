@@ -1,0 +1,12 @@
+p::first-line{
+    color: red;
+    
+}
+p::before{
+    content: ' - ';
+    margin-left: 25px;
+}
+p::after{
+    content: ' - afla mai multe - ';
+    color:brown;
+}

@@ -1,0 +1,35 @@
+a[title]{
+    color: green;
+    text-decoration: none;
+}
+
+a[href ^= https]{
+    color: green;
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+a[href *= "#en/ro/"]{
+    color: blue;
+    text-transform: lowercase;
+}
+a[href *= "#fr/ro/"]{
+    color:aqua;
+    text-transform: lowercase;
+}
+a[href *= "#it/ro/"]{
+    color: red;
+    text-transform: lowercase;
+}
+a[data-info~="extern"]{
+    color: red;
+}
+
+a[data-info~="intern"]{
+    border: 3px solid black;
+}
+p:empty{
+    display: none;
+}
+
