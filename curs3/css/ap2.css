@@ -1,0 +1,28 @@
+#elementToAnimate{
+    position: relative;
+    animation: yourAnimation 5s linear 0s infinite normal none;
+    margin-top: 200px;
+    
+}
+@keyframes yourAnimation {
+    0%{
+        transform: translate(0,0) rotate(0) scale(1);
+    }
+    20%{
+        transform: translate(50px,0px) rotate(90deg) scale(2);
+    }
+    40%{
+        transform: translate(50px,500px) rotate(90deg) scale(3);
+        color: red;
+    }
+    60%{
+        transform: translate(500px,50px) rotate(0deg) scale(4);
+    }
+    80%{
+        transform: translate(400px,0) rotate(-90deg) scale(5);
+    }
+    100%{
+        transform: translate(1800px,0px) rotate(0deg) scale(6);
+    }
+
+}
