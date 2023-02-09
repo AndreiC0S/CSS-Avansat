@@ -1,0 +1,36 @@
+body{
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+.box{
+    background-color: #bb6e09;
+    color: #fff;
+    border-radius: 0px;
+    padding: 20px;
+    font-size: 150%;
+    order: 1;
+
+}
+.box:nth-child(2n + 1){
+    background-color: rgb(58, 36, 3);
+    color: #000;
+    
+}
+.box:nth-child(9n){
+    visibility: hidden;
+}
+#wrapper{
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(8, 50px);
+    
+}
+/* .box1{
+    order: 1;
+}
+.box2{
+    order: 1;
+} */

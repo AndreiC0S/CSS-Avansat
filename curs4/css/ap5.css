@@ -1,0 +1,32 @@
+:root{
+    --primary-color:blue;
+    --secundary-color: red;
+    --font-colors: #424242;
+    --bg-color: #fff;
+    --heading-color: black;
+
+}
+[data-theme='dark']{
+    --primary-color: purple;
+    --secundary-color: #818cab;
+    --font-colors: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: rgb(43, 27, 115);
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bg-color);
+    color: var(--font-colors);
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: calc(1rem + 0.25vh);
+}
+h1{
+    color: var(--heading-color);
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+p{
+    font-size: 1.1rem;
+    
+}
