@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            var a = document.querySelector('#canvas1');
+            var ctx = a.getContext('2d');
+            ctx.arc(200, 100, 70, 0, 2 * Math.PI);
+            ctx.fillStyle = 'red'
+            ctx.fill();
+
+            ctx.arc(100, 100, 70, 0, 2 * Math.PI);
+            ctx.fillStyle = 'red';
+            ctx.fill();
+
+            ctx.rect(100, 100, 200, 200);
+            ctx.rotate(90 * Math.PI / 360);
+            ctx.fillStyle = 'red'
+            ctx.fillRect(143, -70, 140, 140)
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas1" width="300px" height="300px"></canvas>
+
+
+
+</body>
+
+</html>

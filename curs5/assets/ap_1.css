@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.box-rotate-warp{
+    float: left;
+    margin: 0 30px 30px 0;
+    perspective: 1000px;
+}
+.box, .box > div{
+    width: 200px;
+    height: 200px;
+}
+.box-rotate{
+    position: relative;
+    transition: all 0,8s ease;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,-100px);
+}
+.box-rotate > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    padding: 20px;
+    overflow: auto;
+}
+.box-rotate .front{
+    background: rgb(246, 93,93,0.911);
+    z-index: 2;
+    transform: rotate3d(0,1,0, 0deg) translate(0,0,100px);
+}
+.box-rotate .back{
+    background: orange;
+    transform: rotate3d(0,1,0,180deg) rotate(180deg) translate3d(0, 0, 100px);
+}
+.box-rotate .top{
+    background-color: purple;
+    height: 200px;
+    transform: rotate3d(1,0,0,90deg) translate3d(0, 0, 100px);
+}
+.box-rotate .bottom{
+    background: blue;
+    height: 200px;
+    transform: rotate3d(1, 0, 0, -90) translate3d(0, 0, 100px);
+}
+.box-rotate .left{
+    background: yellow;
+    transform: rotate3d(0 ,1, 0, -90deg) translate3d(0 ,0 , 100px);
+
+}
+
+.box-rotate .rigth{
+    background: green;
+    transform: rotate3d(0, 1, 0,90deg) translate3d(0,0,100px);
+}
+
+.box-rotate-top:hover{
+    transform: translate3d(0, 0, -100px) rotate3d(1, 0, 0, -90deg);
+}
