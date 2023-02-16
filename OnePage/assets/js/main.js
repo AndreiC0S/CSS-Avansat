@@ -17,6 +17,7 @@ chec.addEventListener('click', function (e) {
 if(localStorage.getItem('darkMode') == 'enable'){
   boody.setAttribute('class','Dark');
   
+  
 }
 //=========================================================
 
