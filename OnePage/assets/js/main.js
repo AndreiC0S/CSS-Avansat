@@ -1,4 +1,26 @@
 
+// DARK-MODE checkbox
+let boody = document.querySelector('body');
+let chec = document.getElementById("dark-theme");
+
+
+chec.addEventListener('click', function (e) {
+    if(boody.classList.contains('Light')){
+        boody.setAttribute('class','Dark')
+        localStorage.setItem('darkMode', 'enable')
+    }else {
+        boody.setAttribute('class','Light')
+        localStorage.setItem('darkMode', 'disable')
+    } 
+
+});
+if(localStorage.getItem('darkMode') == 'enable'){
+  boody.setAttribute('class','Dark');
+  
+}
+//=========================================================
+
+
 (function() {
   "use strict";
 

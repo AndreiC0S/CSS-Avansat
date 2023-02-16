@@ -1,23 +1,45 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+body[class='Dark']{
+  --mycolor:red;;
+  --mybackground: rgba(8, 50, 104, 0.8);;
+  --header: rgb(68, 68, 68);;
+  --preload: rgb(68, 68, 68);;
+  --section: rgb(68, 68, 68);;
+  --sectionshade: rgb(31, 30, 30);;
+  --para: rgb(179, 170, 170);;
+  --iconbox:  rgb(66, 50, 50);;
+  --backgroundimg: rgba(70, 68, 68, 0.466);;
+}
 :root{
   --mycolor:#9210ea;;
   --mybackground: rgba(16, 110, 234, 0.8);;
+  --header: white;;
+  --preload: white;;
+  --section:white;
+  --sectionshade: #F6F9FE;
+  --para: black;;
+  --iconbox: white;;
+  --backgroundimg: rgba(255, 255, 255, 0.6);;
+  
 }
-body {
+body{
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: var(--para);
+  
 }
 
 a {
   color: var(--mycolor);
   text-decoration: none;
+  z-index: 1;
 }
 
 a:hover {
   color: #3b8af2;
   text-decoration: none;
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: var(--preload);
 }
 
 #preloader:before {
@@ -110,6 +132,22 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
+#dark-theme{
+  display: flex;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  appearance: none;
+  content: url(../img/darkmode/moon.png) ;
+}
+
+#dark-theme:checked{
+  animation: transition 2 ease-in-out 1s 1 linear;
+  content: url(../img/darkmode/sun.png);
+}
+
+ 
+
 #topbar {
   background: var(--mycolor);
   height: 40px;
@@ -140,6 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
   transition: 0.3s;
   margin-left: 20px;
+  
 }
 #topbar .social-links a:hover {
   color: white;
@@ -149,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: var(--header);
   transition: all 0.5s;
   z-index: 997;
   height: 86px;
@@ -400,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--backgroundimg);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -589,11 +628,14 @@ section {
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
+#featured-services{
+  background: var(--section);
+}
 .featured-services .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  background: #fff;
+  background: var(--iconbox);
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -784,12 +826,15 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services{
+  background: var(--section);
+}
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: var(--iconbox);
 }
 .services .icon-box .icon {
   margin: 0 auto;
@@ -922,6 +967,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#portfolio{
+  background: var(--section);
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -1067,6 +1115,10 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+#about{
+  background: var(--sectionshade);
+}
+
 .team {
   padding: 60px 0;
 }
@@ -1290,6 +1342,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+#contact{
+  background: var(--section);
+}
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1405,15 +1460,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: var(--section);
   padding: 0 0 30px 0;
-  color: #444444;
+  color: var(--para);
   font-size: 14px;
-  background: #f1f6fe;
+  background:var(--section);
 }
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #f1f6fe;
+  background: var(--sectionshade);
   text-align: center;
   font-size: 15px;
 }
@@ -1426,7 +1481,7 @@ section {
 }
 #footer .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: var(--section);
   padding: 6px 10px;
   position: relative;
   border-radius: 4px;
@@ -1448,7 +1503,7 @@ section {
   font-size: 16px;
   padding: 0 20px;
   background: var(--mycolor);
-  color: #fff;
+  color: var(--section);
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1458,7 +1513,7 @@ section {
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: var(--section);
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -1478,12 +1533,12 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: var(--para);
 }
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: var(--para);
   position: relative;
   padding-bottom: 12px;
 }
@@ -1510,7 +1565,7 @@ section {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: var(--para);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1547,6 +1602,7 @@ section {
   text-align: center;
   font-size: 13px;
   color: #444444;
+  
 }
 @media (max-width: 768px) {
   #footer .copyright, #footer .credits {
@@ -1555,3 +1611,8 @@ section {
     padding: 2px 0;
   }
 }
+
+
+
+
+
