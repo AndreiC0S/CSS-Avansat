@@ -1,0 +1,16 @@
+$yellow: yellow;
+$blue:blue;
+$green: green;
+$primary-colors: $blue;
+$secondary-color: $yellow;
+
+// Fonts
+$sans-serif : Arial, sans-serif;
+div{
+    border: 5px solid $green;
+    font-family: $sans-serif;
+    background-color: $secondary-color; 
+    p{
+        color: $primary-colors;
+    }
+}

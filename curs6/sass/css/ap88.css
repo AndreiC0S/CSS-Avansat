@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+  min-height: 100vh;
+}
+
+div {
+  border: 5px solid green;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: blue;
+}
+div p {
+  color: yellow;
+  background: black;
+  display: inline-block;
+  margin: auto;
+}
+
+/*# sourceMappingURL=ap88.css.map */
