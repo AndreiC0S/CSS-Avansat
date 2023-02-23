@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body[class='Dark']{
-  --mycolor:red;;
+  --mycolor:rgb(255, 106, 0);;
   --mybackground: rgba(8, 50, 104, 0.8);;
   --header: rgb(68, 68, 68);;
   --preload: rgb(68, 68, 68);;
@@ -13,12 +13,12 @@ body[class='Dark']{
   --backgroundimg: rgba(70, 68, 68, 0.466);;
 }
 :root{
-  --mycolor:#9210ea;;
+  --mycolor:blue;;
   --mybackground: rgba(16, 110, 234, 0.8);;
   --header: white;;
   --preload: white;;
   --section:white;
-  --sectionshade: #F6F9FE;
+  --sectionshade: #9b9da0;
   --para: black;;
   --iconbox: white;;
   --backgroundimg: rgba(255, 255, 255, 0.6);;
@@ -446,13 +446,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/hero-bg.jpg") top left;
+  /* background: url("../img/hero-bg.jpg") top left; */
+  background: url("../img/bannerHero2.jpg") bottom ;
   background-size: cover;
   position: relative;
 }
 #hero:before {
   content: "";
-  background: var(--backgroundimg);
+  /* background: var(--backgroundimg); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -474,7 +475,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--mycolor);
 }
 #hero h2 {
-  color: #555555;
+  color: var(--mycolor);
   margin: 5px 0 30px 0;
   font-size: 24px;
   font-weight: 400;
@@ -999,7 +1000,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: var(--sectionshade);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -1382,6 +1383,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: var(--sectionshade);
 }
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
